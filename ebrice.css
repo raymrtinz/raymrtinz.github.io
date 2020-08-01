@@ -1,0 +1,78 @@
+.cover {
+    width: 100%;
+    position: sticky;
+    z-index: 1;
+    box-shadow: 0 3px 10px #888888;
+}
+
+.logoDesktop {
+    margin-left: auto;
+    margin-top: 10px;
+    margin-right: auto;
+    width: 30%;
+}
+
+.logoiPhone {
+    margin-left: auto;
+    margin-top: 10px;
+    margin-right: auto;
+    width: 80%;
+}
+
+
+.logoPosition {
+    position: absolute;
+    text-align: center;
+    z-index: 2;
+}
+
+#note {
+    text-align: justify;
+}
+
+#shadow {
+    box-shadow: 0 3px 10px #888888;
+}
+
+#nav {
+    margin-right: 20px;
+}
+
+#kicker {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#title {
+    text-align: center;
+    margin-top: 0;
+}
+
+#description {
+    font-size: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#byline {
+    margin-top: 0;
+    text-align: center;
+}
+
+#person {
+    color: black;
+}
+
+.star {
+    width: 3rem !important;
+}
+
+#tlslogo {
+    width: 5rem !important;
+}
+
+#copyright {
+    text-align: center;
+}
