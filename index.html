@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>The LaSallian | Defending truth in tough times</title>
+        <title>The LaSallian | In the trenches</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/css/uikit.min.css"/>
@@ -11,8 +11,8 @@
     <body>
         <!-- Cover -->
         <section id="top">
-            <img src="assets/Cover/cover-serif-desktop.png" alt="cover" class="cover uk-animation-slide-bottom uk-visible@s">
-            <img src="assets/Cover/cover-serif-iphone.png" alt="cover"class="cover uk-animation-slide-bottom uk-hidden@s">
+            <img data-src="assets/Cover/cover-serif-desktop.png" alt="cover" class="cover uk-animation-slide-bottom uk-visible@s" uk-img>
+            <img data-src="assets/Cover/cover-serif-iphone.png" alt="cover"class="cover uk-animation-slide-bottom uk-hidden@s" uk-img>
         </section>
 
         <!-- iPad and Desktop NavBar -->
@@ -21,11 +21,11 @@
                 <div class="uk-navbar-center">
                     <div class="uk-navbar-center-left"><div>
                         <ul class="uk-navbar-nav">
+                            <li class="uk-active"><a href="#about" uk-scroll>About the Issue</a></li>
                             <li class="uk-active"><a href="#timeline" uk-scroll>The Media Struggles</a></li>
-                            <li class="uk-active"><a href="#pwl" uk-scroll>In Closed Quarters</a></li>
                         </ul>
                     </div></div>
-                    <a class="uk-navbar-item uk-logo" a href="#top" uk-scroll><img src="assets/logo/LOGO.png" alt="star" class="star"></a>
+                    <a class="uk-navbar-item uk-logo" a href="#top" uk-scroll><img data-src="assets/Logo/LOGO.png" alt="star" class="star" uk-img></a>
                     <div class="uk-navbar-center-right"><div>
                         <ul class="uk-navbar-nav">
                             <li class="uk-active"><a href="#articles" uk-scroll>Articles</a></li>
@@ -41,7 +41,7 @@
         <div uk-sticky>
             <nav class="uk-navbar-container uk-margin uk-hidden@s" id="shadow" uk-navbar>
                 <div class="uk-navbar-left">
-                    <a class="uk-navbar-item uk-logo" a href="#top" uk-scroll><img src="assets/logo/LOGO.png" alt="star" class="star"></a>
+                    <a class="uk-navbar-item uk-logo" a href="#top" uk-scroll><img data-src="assets/Logo/LOGO.png" alt="star" class="star" uk-img></a>
                     
                 </div>
                 <div class="uk-navbar-right">
@@ -53,8 +53,8 @@
         <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
             <div class="uk-offcanvas-bar uk-flex uk-flex-column">
                 <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                    <li class="uk-active"><a href="#about">About the Issue</a></li>
                     <li class="uk-active"><a href="#timeline">The Media Struggles</a></li>
-                    <li class="uk-active"><a href="#pwl">In Closed Quarters</a></li>
                     <li class="uk-active"><a href="#articles">Articles</a></li>
                     <li class="uk-active"><a href="#wots">Vox Populi</a></li>
                 </ul>
@@ -71,17 +71,25 @@
                      <div class="uk-grid-column-large uk-visible@s"uk-grid>
                         <div class="uk-width-1-2">
                             <h2><b>Editor's Note</b></h2>
-                            <p id="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            <p id="note">A deep ditch dug underground—like a bottomless pit, a trench, taken figuratively, is perhaps the last place we would ever want to be in. 
+                                Yet many of us find ourselves trapped in trenches today, with the overwhelming sense of disruption the COVID-19 pandemic has brought upon our lives. 
+                                Perhaps now more than ever, in our seclusion, information holds immense value; it is information, reported through words or visuals, that connects us to the realities beyond what is immediately seen outside our own windows. 
+                                The world is so large, but our vantage point is often so narrow.<br><br>
+                                Enter the media: an unwavering force, evolving with the times to continuously serve the larger community, capturing history and everyday happenings. 
+                                Its influence is far- reaching, powerfully adept at shaping public perception. 
+                                However, it too is in the trenches, hounded by perils of censorship, job insecurity, even physical and psychological harm. 
+                                To hold one’s ground, to stand firm, to stay committed to ideals—these are big asks when pressure points threaten to pull the ground from beneath one’s feet. 
+                                As the media takes on the difficult task of facing up against other machinations of propaganda, valiant and responsible journalism is no longer a fancy principle, but an obligation—to the truth, and to the people who rightfully deserve it.<br><br>
+                                Here, <b>The LaSallian</b> explores what makes a journalist in the present landscape of Philippine society, challenging media practitioners and consumers alike to scrutinize how information—and those who control it—shapes our world.
                                 <br><br><b>Erinne Ong</b><br>Editor-in-Chief</p>
                         </div>
                         <div class="uk-width-1-2">
                             <h2><b>About the Cover</b></h2>
-                            <p id="note">The cover tells a timeless narrative about the dangers to press freedom. 
-                                Drawing from history, Philippine media has continuously struggled to promote and defend the truth. 
-                                Our present is no exception—peering through controlled facades reveals we are in dark times indeed.</p>
+                            <p id="note">The cover paints an ominous mosaic of a society in fragments, simulating a reality perhaps not far from our own in these unprecedented times. 
+                                Caught in the crossfire between a rapidly spreading disease and lackluster government response is a nation shrouded in darkness.<br><br>
+                                To guide out of the dark, courage is most vital—in everyday individuals who voice dissent and challenge power structures;
+                                and in journalists who uncover veiled narratives and defend the truth.
+                                <br><br>Cover by <b>Ruaina Moreno</b> & <b>Lauren Sason</b><br></p>
                         </div>
                     </div>
 
@@ -110,16 +118,17 @@
                 <div class="uk-container">
                     <h3 id="kicker"><b>TIMELINE</b></h3>
                     <h1 id="title"><b>Media Struggles in the Philippines</b></h1>
-                    <p id="byline">by <b>Jan Emmanuel Alonzo, Rafael Gabriel Arceo, John Robert Lee,</b> & <b>Glenielle Geraldo Nanglihan</b><br>Illustration by <b>Jacob Dy</b> & <b>Ruaina Moreno</b></p>
+                    <p id="byline">by <b>Jan Emmanuel Alonzo, Rafael Gabriel Arceo, John Robert Lee,</b> & <b>Glenielle Geraldo Nanglihan</b><br>Infographic by <b>Jacob Dy</b> & <b>Ruaina Moreno</b></p>
                     <hr class="uk-divider-icon">
-                    <p id="description" class="uk-visible@s">Even after the EDSA Revolution, Philippine media has encountered several obstacles from closures <br> to lawsuits.
-                    <b>The LaSallian</b> looks back at the decades worth of struggle journalists had to endure starting<br>from the Cory administration
-                    up until the recent shutdown of ABS-CBN.</b></p>
-                    <p id="description" class="uk-hidden@s">Even after the EDSA Revolution, Philippine media has encountered several obstacles from closures to lawsuits.
-                        <b>The LaSallian</b> looks back at the decades worth of struggle journalists had to endure starting from the Cory administration
-                        up until the recent shutdown of ABS-CBN.</b></p><br>
-                    <!-- Displaying infographic for iPad and larger-->
-                    <img class="uk-visible@s" src="assets/Infographic/infographic.png" alt="Infographic">
+                    <p id="description" class="uk-visible@s">After the "golden age" of the Philippine press ended in 1972, 
+                        journalism in the country has continually been embattled by challenges. <br><b>The LaSallian</b> looks back at the decade's worth of struggle—from 
+                        closures to lawsuits—journalists<br> have had to face from the Marcos era until now.
+                    </p>
+                    <p id="description" class="uk-hidden@s">After the "golden age" of the Philippine press ended in 1972, 
+                        journalism in the country has continually been embattled by challenges. <b>The LaSallian</b> looks back at the decade's worth of struggle—
+                        from closures to lawsuits—journalists have had to face from the Marcos era until now.</p><br>
+                    <!-- Infographic for iPad, laptop and desktop -->
+                    <img class="uk-visible@s" data-src="assets/Infographic/infographic.png" alt="Infographic" uk-img>
                     <!-- Infographic button for iPhone -->
                     <div uk-lightbox>
                         <a class="uk-button uk-button-default uk-width-1-1 uk-hidden@s" href="assets/Infographic/infographic.png">View Infographic</a>
@@ -127,101 +136,36 @@
                 </div>
             </div>
         </section>
-        
-
-        <!-- Painting With Light -->
-        <section id="pwl">
-            <div class="uk-section uk-section-secondary">
-                <div class="uk-container">
-                    <h3 id="kicker"><b>PAINTING WITH LIGHT</b></h3>
-                    <h1 id="title"><b>In Closed Quarters</b></h1>
-                    <hr class="uk-divider-icon">
-                    <p id="description">With a pandemic changing the world as we know it, <b>The LaSallian</b> takes a look at how <br>
-                        journalism remains steadfast in delivering the truth despite the difficult circumstances.</p><br>
-                    
-                     <div uk-grid>
-                        <div class="uk-grid-small-medium uk-grid-row-medium uk-grid-column-medium uk-child-width-1-3@s uk-text-center" uk-grid="masonry: true">
-                            <div>
-                                <div class="uk-card uk-card-default">
-                                    <div class="uk-card-media-top">
-                                        <img src="assets/PWL/IMG_4215.JPG" style="max-height: 100%;">
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="uk-card uk-card-default">
-                                    <div class="uk-card-media-top">
-                                        <img src="assets/PWL/IMG_4217.PNG" style="max-height: 100%;">
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="uk-card uk-card-default">
-                                    <div class="uk-card-media-top">
-                                        <img src="assets/PWL/IMG_4214.JPG" style="max-height: 100%;">
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="uk-card uk-card-default">
-                                    <div class="uk-card-media-top">
-                                        <img src="assets/PWL/IMG_4216.JPG" style="max-height: 100%;">
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="uk-card uk-card-default">
-                                    <div class="uk-card-media-top">
-                                        <img src="assets/PWL/IMG_4212.JPG" style="max-height: 100%;">
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="uk-card uk-card-default">
-                                    <div class="uk-card-media-top">
-                                        <img src="assets/PWL/IMG_4210.JPG" style="max-height: 100%;">
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="uk-card uk-card-default">
-                                    <div class="uk-card-media-top">
-                                        <img src="assets/PWL/IMG_4211.JPG" style="max-height: 100%;">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="uk-visible@s"></div>
-                            <div>
-                                <div class="uk-card uk-card-default">
-                                    <div class="uk-card-media-top">
-                                        <img src="assets/PWL/IMG_4237.JPG" style="max-height: 100%;">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-
         <!-- Articles -->
         <section id="articles">
             <div class="uk-section uk-section-muted">
                 <div class="uk-container">
                     <h1 id="title"><b>Articles</b></h1><br>
                     <div uk-grid>
-                        <div class="uk-grid-small-large uk-grid-row-large uk-child-width-1-3@s uk-text-center" uk-grid="masonry: true">
+                        <div class="uk-grid-small-large uk-grid-row-large uk-child-width-1-2@s uk-text-center" uk-grid="masonry: true">
                             <div>
                                 <div class="uk-card uk-card-default">
                                     <div class="uk-card-media-top">
                                         <img src="assets/Articles/10Qs Mike Navallo_Ruaina Moreno (w_ byline).JPG" style="max-height: 100%;">
                                     </div>
                                     <div class="uk-card-body">
-                                        <h3 class="uk-card-title"><b>Guarding press freedom: Mike Navallo on the current state of Philippine media</b></h3>
-                                        <p id="byline">by <b>Magz Chin</b> & <b>John Robert Lee</b></p>
+                                        <h3 class="uk-card-title"><b>Mike Navallo: Principles over fear</b></h3>
+                                        <p id="byline">by <b>Ian Kevin Castro</b>, <b>Magz Chin</b>, <b>John Robert Lee</b>, & <b>Sabrina Joyce Go</b></p>
                                         <p>Aside from being a lawyer, Mike Navallo is one of ABS-CBN's most recognized reporters. His 
                                             track-record includes covering a handful of controversial political stories.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top">
+                                        <img src="assets/Articles/Campus Journalism In The Time Of Dissent (w_ byline).JPG" style="max-height: 100%;">
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title"><b>Out of the shadows: Campus journalism in the times of silencing and dissent</b></h3>
+                                        <p id="byline">by <b>Ian Kevin Castro</b>, <b>Diego Vergel de Dios</b>, <b>Anakin Loewes Garcia</b>, & <b>Glenielle Geraldo Nanglihan</b></p>
+                                        <p>In the past, campus journalists have stood for freedom and dissent. 
+                                            Today, they are being called upon again as attacks against the press intensify. </p>
                                     </div>
                                 </div>
                             </div>
@@ -231,8 +175,8 @@
                                         <img src="assets/Articles/Alternative Media, Lauren Sason (watermarked).jpg" style="max-height: 100%;">
                                     </div>
                                     <div class="uk-card-body">
-                                        <h3 class="uk-card-title"><b>To the outskirts: The rise of alternative media</b></h3>
-                                        <p id="byline">by <b>Jasper Buan</b> & <b>Rafael Gabriel Arceo</b></p>
+                                        <h3 class="uk-card-title"><b>To the outskirts: Giving voices to alternative views</b></h3>
+                                        <p id="byline">by <b>Rafael Gabriel Arceo</b> & <b>Jasper Buan</b></p>
                                         <p>Alternative media sheds light on stories that may be overlooked in society.</p>
                                     </div>
                                 </div>
@@ -243,7 +187,7 @@
                                         <img src="assets/Articles/Citizens Journalism, Ana Mapa (watermarked).jpg" style="max-height: 100%;">
                                     </div>
                                     <div class="uk-card-body">
-                                        <h3 class="uk-card-title"><b>In the blink of an eye: Clement Corominas, citizen journalist</b></h3>
+                                        <h3 class="uk-card-title"><b>Another voice: Clement Corominas, citizen journalist</b></h3>
                                         <p id="byline">by <b>Jacob Dy</b> & <b>Glenielle Geraldo Nanglihan</b></p>
                                         <p>It only takes a few seconds to capture history. 
                                             With the advent of social media, it now only takes a few clicks too. </p>
@@ -253,27 +197,13 @@
                             <div>
                                 <div class="uk-card uk-card-default">
                                     <div class="uk-card-media-top">
-                                        <img src="assets/Articles/Campus Journalism In The Time Of Dissent (w_ byline).JPG" style="max-height: 100%;">
+                                        <img src="assets/Articles/Lasallians in Journalism, Lauren Sason (watermarked).jpg" style="max-height: 100%;">
                                     </div>
                                     <div class="uk-card-body">
-                                        <h3 class="uk-card-title"><b>In the trenches: Campus journalism in the times of dissent</b></h3>
-                                        <p id="byline">by <b>Diego Vergel de Dios</b> & <b>Glenielle Geraldo Nanglihan</b></p>
-                                        <p>In the past, campus journalists have stood for freedom and dissent. 
-                                            Today, they are being called upon again as attacks against the press intensify. </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="uk-card uk-card-default">
-                                    <div class="uk-card-media-top">
-                                        <img src="assets/Articles/Children_s Programming_Ruaina Moreno (w_ byline).jpg" style="max-height: 100%;">
-                                    </div>
-                                    <div class="uk-card-body">
-                                        <h3 class="uk-card-title"><b>Anything can happen: Pressing issues in the world of 
-                                            local children's educational programming</b></h3>
-                                        <p id="byline">by <b>Magz Chin</b> & <b>Ana Mapa</b></p>
-                                        <p>Millions of kids tune in to the TV to watch their favorite shows. 
-                                            How these shows are made present a different side of the screen. </p>
+                                        <h3 class="uk-card-title"><b>Born and bred: Lasallians in media</b></h3>
+                                        <p id="byline">by <b>John Robert Lee</b> & <b>Lauren Sason</b></p>
+                                        <p>Over the years, DLSU has continued to produce graduates who have gone on to have successful careers in media, 
+                                            taking on positions and roles that play no small part in the information discourse in the country.</p>
                                     </div>
                                 </div>
                             </div>
@@ -296,24 +226,10 @@
                                         <img src="assets/Articles/Both Side Journalism (w_ byline).jpg" style="max-height: 100%;">
                                     </div>
                                     <div class="uk-card-body">
-                                        <h3 class="uk-card-title"><b>No more neutrality</b></h3>
-                                        <p id="byline">by <b>Jan Emmanuel Alonzo</b></p>
+                                        <h3 class="uk-card-title"><b>News and 'bias': Must journalism be neutral?</b></h3>
+                                        <p id="byline">by <b>Jan Emmanuel Alonzo</b>, <b>Kim Balasabas</b>, & <b>Rain Leoncio</b></p>
                                         <p>In the midst of several social and political issues, journalists are not meant to be neutral
                                             fence-sitters but critical voices for truth and justice.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="uk-card uk-card-default">
-                                    <div class="uk-card-media-top">
-                                        <img src="assets/Articles/Lasallians in Journalism, Lauren Sason (watermarked).jpg" style="max-height: 100%;">
-                                    </div>
-                                    <div class="uk-card-body">
-                                        <h3 class="uk-card-title"><b>Born and bred: Lasallians in media</b></h3>
-                                        <p id="byline">by <b>John Robert Lee</b> & <b>Lauren Sason</b></p>
-                                        <p>Chi Datu-Bocobo (AB-CA, '96) is a TV host for local news channel One PH. 
-                                            Chesca Buencamino (AB-OC, '15) is a social media
-                                            producer for CNN Philippines.</p>
                                     </div>
                                 </div>
                             </div>
@@ -341,13 +257,15 @@
             <div class="uk-section uk-section-secondary">
                 <div class="uk-container">
                     <h3 id="kicker"><b>VOX POPULI</b></h3>
-                    <h2 id="title"><b>"What impact has journalism made on your life?"</b></h2>
-                    <p id="byline">Graphics by <b>Ruaina Moreno</b> & <b>Lauren Sason</b></p>
+                    <h2 id="title"><b>"What is the role of the media today?"</b></h2>
+                    <p id="byline">by <b>John Oliver Dysanco</b> <b>Yvan Martinez</b><br>Graphics by <b>Yvan Martinez</b></p>
                     <hr class="uk-divider-icon">
-                    <p id="description" class="uk-visible@s">Journalism influences us in many different ways. As press freedom is under threat in society,
-                        <br>students share their personal thoughts and experiences on how it impacts their life.</p>
-                    <p id="description" class="uk-hidden@s">Journalism influences us in many different ways. As press freedom is under threat in society,
-                        students share their personal thoughts and experiences on how it impacts their life.</p><br>
+                    <p id="description" class="uk-visible@s">Whether we read the papers, watch television broadcasts, or catch tidbits on our social media feeds, we rely on media content to stay 
+                        informed about the on-goings around the country. In a changing landscape marked by uncertainty and volatility, <b>The LaSallian</b> gathered insights from individuals from diverse 
+                        sectors and organizations regarding the significance of the press in contemporary society.</p>
+                    <p id="description" class="uk-hidden@s">Whether we read the papers, watch television broadcasts, or catch tidbits on our social media feeds, we rely on media content to stay 
+                        informed about the on-goings around the country. In a changing landscape marked by uncertainty and volatility, <b>The LaSallian</b> gathered insights from individuals from diverse 
+                        sectors and organizations regarding the significance of the press in contemporary society.</p><br>
                     <div uk-slider="center: true; autoplay: true;">
                         <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
                             <ul class="uk-slider-items uk-child-width-1-3@s uk-grid">
