@@ -72,3 +72,11 @@
 #tlslogo {
     width: 5rem !important;
 }
+/* 
+.uk-link-heading:hover {
+    color: green !important;
+} */
+
+.uk-link-toggle:hover  .uk-link-heading {
+    color: green !important;
+}
